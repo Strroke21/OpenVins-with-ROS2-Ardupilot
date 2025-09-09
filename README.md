@@ -41,8 +41,3 @@ ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstro
 #replace config_path with your path 
 
 ```
-
-# OpenVins-with-ROS2-Humble
-# OpenVins-with-ROS2-Humble
-# OpenVins-with-ROS2
-# OpenVins-with-ROS2-Ardupilot
