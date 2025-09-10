@@ -15,7 +15,8 @@ git clone https://github.com/rpng/open_vins/
 cd ..
 colcon build #ROS2
 
-source install/setup.sh
+echo "source ~/workspace/catkin_ws_ov/install/setup.sh" >> ~/.bashrc
+source ~/.bashrc
 
 ```
 
