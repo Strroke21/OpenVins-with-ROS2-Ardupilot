@@ -33,7 +33,15 @@ https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
 ```
 
-### 5. Launch the Node: 
+### 5. Launch IMU node
+
+```bash
+
+ros2 run imu_filter_madgwick imu_filter_madgwick_node   --ros-args   -r imu/data_raw:=/camera/camera/imu   -r imu/data:=/imu/data   -p use_mag:=false
+
+```
+
+### 6. Launch the Node: 
 
 ```bash
 
