@@ -22,6 +22,8 @@ source ~/.bashrc
 
 ### 3. Install ROS2 Humble
 
+``` follow instructions for ros2 install ```
+
 https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
 ### 4. edit config file in /open_vins/config/rs_d455/
