@@ -5,8 +5,19 @@
 sudo apt-get install libeigen3-dev libboost-all-dev libceres-dev
 
 ```
+### 2. Install Opencv
 
-## 2. clone the Openvins Repo:
+```bash
+git clone https://github.com/opencv/opencv/
+git clone https://github.com/opencv/opencv_contrib/
+mkdir opencv/build/
+cd opencv/build/
+cmake -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+make -j8
+sudo make install
+```
+
+## 3. clone the Openvins Repo:
 
 ```bash 
 mkdir -p ~/workspace/catkin_ws_ov/src/
@@ -20,13 +31,13 @@ source ~/.bashrc
 
 ```
 
-### 3. Install ROS2 Humble
+### 4. Install ROS2 Humble
 
 ``` follow instructions for ros2 install ```
 
 https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
-### 4. edit config file in /open_vins/config/rs_d455/
+### 5. edit config file in /open_vins/config/rs_d455/
 
 ```bash 
     estimator_config.yaml #set use_stereo: false (if mono cam else set true for stereo)
@@ -35,7 +46,7 @@ https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
 ```
 
-### 5. Launch the Node: 
+### 6. Launch the Node: 
 
 ```bash
 
