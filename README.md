@@ -10,6 +10,7 @@ sudo apt-get install libeigen3-dev libboost-all-dev libceres-dev
 ```bash
 git clone https://github.com/opencv/opencv/
 git clone https://github.com/opencv/opencv_contrib/
+git checkout 4.8.0
 mkdir opencv/build/
 cd opencv/build/
 cmake -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
