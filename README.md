@@ -51,6 +51,15 @@ https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
 ```bash
 
+#camera
+
+ros2 launch realsense2_camera rs_launch.py   enable_depth:=true   enable_color:=true   enable_sync:=true   depth_module.depth_profile:=640,480,60   rgb_camera.color_profile:=640,480,60 enable_sync:=true enable_gyro:=true enable_accel:=true unite_imu_method:=2 gyro_fps:=200 accel_fps:=200
+```
+
+```bash
+
+#openvins
+
 ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstroke/workspace/catkin_ws_ov/src/open_vins/config/rs_d455/estimator_config.yaml -p verbosity:=DEBUG  -p try_zupt:=true
 
 #replace config_path with your path 
