@@ -83,3 +83,10 @@ ros2 launch rtabmap_launch rtabmap.launch.py \
 
 ```
 
+### 7. Run the script 
+
+```bash
+
+python3 ov_ros_main.py
+
+```
