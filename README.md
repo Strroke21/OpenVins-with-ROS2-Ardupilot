@@ -8,8 +8,12 @@ sudo apt-get install libeigen3-dev libboost-all-dev libceres-dev
 ### 2. Install Opencv
 
 ```bash
-git clone https://github.com/opencv/opencv/
 git clone https://github.com/opencv/opencv_contrib/
+cd opencv_contrib
+git checkout 4.8.0
+cd ..
+git clone https://github.com/opencv/opencv/
+cd opencv
 git checkout 4.8.0
 mkdir opencv/build/
 cd opencv/build/
