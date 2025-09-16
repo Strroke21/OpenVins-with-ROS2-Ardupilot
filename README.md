@@ -42,7 +42,7 @@ source ~/.bashrc
 
 https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
-### 5. edit config file in /open_vins/config/rs_d455/
+### 5. edit config file in given as per your sensors and topics
 
 ```bash 
     estimator_config.yaml #set use_stereo: false (if mono cam else set true for stereo)
