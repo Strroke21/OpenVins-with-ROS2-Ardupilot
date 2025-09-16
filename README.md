@@ -83,7 +83,30 @@ ros2 launch rtabmap_launch rtabmap.launch.py \
 
 ```
 
-### 7. Run the script 
+### 7. Ardupilot Params setup
+
+```bash
+
+SERIAL1_PROTOCOL = 2 (MAVLink2).
+
+SERIAL1_BAUD = 115 (115200 baud)
+
+VISO_TYPE = 1 (mavlink)
+
+EK3_SRC1_POSXY = 6 (ExternalNav)
+
+EK3_SRC1_VELXY = 6 (ExternalNav)
+
+EK3_SRC1_POSZ = 1 (Baro which is safer)
+
+EK3_SRC1_VELZ = 6 (you can set it to 6 if 1st flight test looks good)
+
+EK3_SRC1_YAW = 1 (Compass)
+
+
+```
+
+### 8. Run the script 
 
 ```bash
 
