@@ -71,9 +71,6 @@ ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstro
 ```
 
 ```bash
-
-#### 
-
 #launch rtabmap to view trajectory
 ros2 launch rtabmap_launch rtabmap.launch.py \
     rtabmap_args:="--delete_db_on_start" \
