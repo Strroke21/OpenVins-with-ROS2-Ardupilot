@@ -110,6 +110,6 @@ EK3_SRC1_YAW = 1 (Compass)
 
 ```bash
 
-python3 ov_ros_main.py
+python3 ov_ros_main.py #in the script camera 1:downward 0: forward 
 
 ```
