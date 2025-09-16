@@ -47,7 +47,7 @@ https://github.com/Strroke21/V-SLAM-with-RTABMAP-and-Realsense-D4XX
 
 ```
 
-### 6. Launch the Node: 
+### 6. Launch the Node: (before launching node make sure IMU noise parameters are correct)
 
 ```bash
 
