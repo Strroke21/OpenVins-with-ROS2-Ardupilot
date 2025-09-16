@@ -65,3 +65,12 @@ ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstro
 #replace config_path with your path 
 
 ```
+
+```bash
+
+#### 
+
+#launch rtabmap for stable odometry
+ros2 launch rtabmap_launch rtabmap.launch.py    visual_odometry:=false    rgb_topic:=/camera/camera/color/image_raw    camera_info_topic:=/camera/camera/color/camera_info    odom_topic:=/odomimu    approx_sync:=true    depth:=false
+```
+
