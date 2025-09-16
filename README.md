@@ -74,7 +74,7 @@ ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstro
 
 #### 
 
-#launch rtabmap for stable odometry
+#launch rtabmap to view trajectory
 ros2 launch rtabmap_launch rtabmap.launch.py \
     rtabmap_args:="--delete_db_on_start" \
     rgb_topic:=/camera/camera/color/image_raw \
