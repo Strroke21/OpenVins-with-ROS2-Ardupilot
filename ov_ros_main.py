@@ -239,8 +239,8 @@ class SlamLocalization(Node):
             current_time = time.time()
             data_hz_per_second = self.counter / (current_time - start_time)
             self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
-            # vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
-            # vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
+            vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
+            vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
 
         elif cam_orient == 1:
 
@@ -259,8 +259,8 @@ class SlamLocalization(Node):
             current_time = time.time()
             data_hz_per_second = self.counter / (current_time - start_time)
             self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
-            # vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
-            # vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
+            vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
+            vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
             loc = local_pos(self.vehicle)
             self.csv_writer.writerow([cam_x, cam_y, cam_z, loc[0], loc[1], loc[2]])
 
