@@ -68,9 +68,23 @@ ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstro
 
 ```bash
 
+#launch imu filter 
+ros2 run imu_filter_madgwick imu_filter_madgwick_node   --ros-args   -r imu/data_raw:=/camera/camera/imu   -r imu/data:=/imu/data   -p use_mag:=false
+
+```bash
+
 #### 
 
 #launch rtabmap for stable odometry
-ros2 launch rtabmap_launch rtabmap.launch.py    visual_odometry:=false    rgb_topic:=/camera/camera/color/image_raw    camera_info_topic:=/camera/camera/color/camera_info    odom_topic:=/odomimu    approx_sync:=true    depth:=false
+ros2 launch rtabmap_launch rtabmap.launch.py \
+    rtabmap_args:="--delete_db_on_start" \
+    rgb_topic:=/camera/camera/color/image_raw \
+    camera_info_topic:=/camera/camera/color/camera_info \
+    odom_topic:=/odomimu \
+    approx_sync:=true \
+    depth:=false \
+    visual_odometry:=false \
+    imu_topic:=/imu/data
+
 ```
 
