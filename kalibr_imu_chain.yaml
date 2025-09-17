@@ -8,10 +8,10 @@ imu0:
     - [0.0, 0.0, 0.0, 1.0]
 
   # from Kalibr papers / Intel datasets
-  accelerometer_noise_density: 0.012
-  accelerometer_random_walk: 0.0004
-  gyroscope_noise_density: 0.0015
-  gyroscope_random_walk: 0.00003
+  accelerometer_noise_density: 0.12
+  accelerometer_random_walk: 0.004
+  gyroscope_noise_density: 0.015
+  gyroscope_random_walk: 0.0003
 
   rostopic: /camera/camera/imu
   time_offset: 0.0
