@@ -1,0 +1,21 @@
+[0.009s] Invoking command in '/home/deathstroke/openvins-ros/build/vins_mono': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deathstroke/openvins-ros -DCMAKE_INSTALL_PREFIX=/home/deathstroke/openvins-ros/install/vins_mono
+[0.015s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.080s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.094s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.095s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.097s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.102s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.107s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.122s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.122s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.183s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.210s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.226s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[0.226s]   ament_target_dependencies() the first argument must be a valid target name
+[0.226s] Call Stack (most recent call first):
+[0.226s]   CMakeLists.txt:30 (ament_target_dependencies)
+[0.226s] 
+[0.226s] [0m
+[0.226s] -- Configuring incomplete, errors occurred!
+[0.226s] See also "/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/CMakeOutput.log".
+[0.232s] Invoked command in '/home/deathstroke/openvins-ros/build/vins_mono' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deathstroke/openvins-ros -DCMAKE_INSTALL_PREFIX=/home/deathstroke/openvins-ros/install/vins_mono

@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target vins_mono_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vins_mono_node.dir/src/ov_ros_main.cpp.o[0m
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_position_send(double, double, double, double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:91:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::Result mavsdk::MavlinkPassthrough::send_message(mavlink_message_t&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   91 |     [01;35m[Kpassthrough->send_message(msg)[m[K;  // MAVSDK v1 API
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:14[m[K:
+[01m[K/usr/local/include/mavsdk/plugins/mavlink_passthrough/mavlink_passthrough.h:95:23:[m[K [01;36m[Knote: [m[Kdeclared here
+   95 |     DEPRECATED Result [01;36m[Ksend_message[m[K(mavlink_message_t& message);
+      |                       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_speed_send(double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:108:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::Result mavsdk::MavlinkPassthrough::send_message(mavlink_message_t&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  108 |     [01;35m[Kpassthrough->send_message(msg)[m[K;  // MAVSDK v1 API
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:14[m[K:
+[01m[K/usr/local/include/mavsdk/plugins/mavlink_passthrough/mavlink_passthrough.h:95:23:[m[K [01;36m[Knote: [m[Kdeclared here
+   95 |     DEPRECATED Result [01;36m[Ksend_message[m[K(mavlink_message_t& message);
+      |                       [01;36m[K^~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable vins_mono_node[0m
+[100%] Built target vins_mono_node
+-- Install configuration: ""
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/lib/vins_mono/vins_mono_node
+-- Set runtime path of "/home/deathstroke/openvins-ros/install/vins_mono/lib/vins_mono/vins_mono_node" to ""
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/package_run_dependencies/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/parent_prefix_path/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.bash
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.zsh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/packages/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig.cmake
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig-version.cmake
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.xml

@@ -1,0 +1,3 @@
+[0.000000] (-) TimerEvent: {}
+[0.000535] (-) JobUnselected: {'identifier': 'slam_localization'}
+[0.000557] (-) EventReactorShutdown: {}

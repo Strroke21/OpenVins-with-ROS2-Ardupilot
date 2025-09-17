@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:21 (message):
+  MAVLink headers not found.  Install mavlink or set MAVLINK_INCLUDE_DIRS.
+
+[0m

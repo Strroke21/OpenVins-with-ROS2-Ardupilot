@@ -1,0 +1,15 @@
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_position_send(double, double, double, double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:90:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::MessageType[m[K’ has not been declared
+   90 |     passthrough->send_message(msg, MavlinkPassthrough::[01;31m[KMessageType[m[K::NonQueued);
+      |                                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_speed_send(double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:107:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::MessageType[m[K’ has not been declared
+  107 |     passthrough->send_message(msg, MavlinkPassthrough::[01;31m[KMessageType[m[K::NonQueued);
+      |                                                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:181:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcreate[m[K’ is not a member of ‘[01m[Kmavsdk::Mavsdk[m[K’
+  181 |     auto mavsdk = Mavsdk::[01;31m[Kcreate[m[K();
+      |                           [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vins_mono_node.dir/build.make:76: CMakeFiles/vins_mono_node.dir/src/ov_ros_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vins_mono_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

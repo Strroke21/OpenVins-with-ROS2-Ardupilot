@@ -1,0 +1,10 @@
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/uninstall.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/vins_mono_uninstall.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/vins_mono_node.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/test.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/edit_cache.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/rebuild_cache.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/list_install_components.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/install.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/install/local.dir
+/home/deathstroke/openvins-ros/build/vins_mono/CMakeFiles/install/strip.dir

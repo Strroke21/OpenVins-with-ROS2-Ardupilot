@@ -1,0 +1,16 @@
+/home/deathstroke/openvins-ros/install/vins_mono/lib/vins_mono/vins_mono_node
+/home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/package_run_dependencies/vins_mono
+/home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/parent_prefix_path/vins_mono
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.sh
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.dsv
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.sh
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.dsv
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.bash
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.sh
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.zsh
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.dsv
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.dsv
+/home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/packages/vins_mono
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig.cmake
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig-version.cmake
+/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.xml

@@ -1,0 +1,27 @@
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_position_send(double, double, double, double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:90:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::Result mavsdk::MavlinkPassthrough::send_message(mavlink_message_t&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   90 |     [01;35m[Kpassthrough->send_message(msg)[m[K;  // MAVSDK v1 API
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:14[m[K:
+[01m[K/usr/local/include/mavsdk/plugins/mavlink_passthrough/mavlink_passthrough.h:95:23:[m[K [01;36m[Knote: [m[Kdeclared here
+   95 |     DEPRECATED Result [01;36m[Ksend_message[m[K(mavlink_message_t& message);
+      |                       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kvoid vision_speed_send(double, double, double)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:107:30:[m[K [01;35m[Kwarning: [m[K‘[01m[Kmavsdk::MavlinkPassthrough::Result mavsdk::MavlinkPassthrough::send_message(mavlink_message_t&)[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+  107 |     [01;35m[Kpassthrough->send_message(msg)[m[K;  // MAVSDK v1 API
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+In file included from [01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:14[m[K:
+[01m[K/usr/local/include/mavsdk/plugins/mavlink_passthrough/mavlink_passthrough.h:95:23:[m[K [01;36m[Knote: [m[Kdeclared here
+   95 |     DEPRECATED Result [01;36m[Ksend_message[m[K(mavlink_message_t& message);
+      |                       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:181:12:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kmavsdk::Mavsdk::Mavsdk()[m[K’
+  181 |     Mavsdk [01;31m[Kmavsdk[m[K;  // MAVSDK v1 constructor
+      |            [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/deathstroke/openvins-ros/src/ov_ros_main.cpp:12[m[K:
+[01m[K/usr/local/include/mavsdk/mavsdk.h:283:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  283 |     [01;36m[KMavsdk[m[K() = delete;
+      |     [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vins_mono_node.dir/build.make:76: CMakeFiles/vins_mono_node.dir/src/ov_ros_main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vins_mono_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

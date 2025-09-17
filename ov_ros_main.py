@@ -217,8 +217,8 @@ class SlamLocalization(Node):
         self.odom_subscription = self.create_subscription(Odometry,'/odomimu', self.odom_callback, qos)
         self.csv_file = open('ov_data.csv', mode='a', newline='')
         self.vehicle = vehicle
-        self.csv_writer = csv.writer(self.csv_file)
-        self.csv_writer.writerow(['SLAM_X', 'SLAM_Y', 'SLAM_Z', 'loc_X', 'loc_Y', 'loc_Z'])
+        # self.csv_writer = csv.writer(self.csv_file)
+        # self.csv_writer.writerow(['SLAM_X', 'SLAM_Y', 'SLAM_Z', 'loc_X', 'loc_Y', 'loc_Z'])
 
     def odom_callback(self, msg):
         linear_vel = msg.twist.twist.linear
@@ -241,7 +241,7 @@ class SlamLocalization(Node):
             self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
             vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
             vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
-
+            
         elif cam_orient == 1:
 
             q = [orientation.x, orientation.y, orientation.z, orientation.w]
@@ -261,12 +261,13 @@ class SlamLocalization(Node):
             self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
             vision_speed_send(self.vehicle, cam_vx, cam_vy, cam_vz)
             vision_position_send(self.vehicle, cam_x, cam_y, cam_z, cam_roll, cam_pitch, cam_yaw)
-            loc = local_pos(self.vehicle)
-            self.csv_writer.writerow([cam_x, cam_y, cam_z, loc[0], loc[1], loc[2]])
+            # loc = local_pos(self.vehicle)
+            # self.csv_writer.writerow([cam_x, cam_y, cam_z, loc[0], loc[1], loc[2]])
+            
 
     def destroy_node(self):
         super().destroy_node()
-        self.csv_file.close()        
+        # self.csv_file.close()        
 
 def main(args=None):
     vehicle = connect(conn_string, 115200)

@@ -1,0 +1,83 @@
+[0.058s] [34mcolcon[0m [1;30mDEBUG[0m [32mCommand line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'vins_mono'][0m
+[0.058s] [34mcolcon[0m [1;30mDEBUG[0m [32mParsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['vins_mono'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cargo_args=None, clean_build=False, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, lookup_in_workspace=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7828bb69cc40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7828bb69c730>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7828bb69c730>>, mixin_verb=('build',))[0m
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) check parameters
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) check parameters
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) check parameters
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) check parameters
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(colcon_meta) discover
+[0.075s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) discover
+[0.076s] [34mcolcon.colcon_core.package_discovery[0m [1;30mINFO[0m Crawling recursively for packages in '/home/deathstroke/openvins-ros'
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore'
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ignore_ament_install'
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_pkg']
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_pkg'
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['colcon_meta']
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'colcon_meta'
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extensions ['ros']
+[0.076s] [34mcolcon.colcon_core.package_identification[0m [1;30mLevel 1[0m _identify(.) by extension 'ros'
+[0.084s] [34mcolcon.colcon_core.package_identification[0m [1;30mDEBUG[0m [32mPackage '.' with type 'ros.ament_cmake' and name 'vins_mono'[0m
+[0.084s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(recursive) using defaults
+[0.084s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) discover
+[0.084s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(ignore) using defaults
+[0.084s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) discover
+[0.084s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(path) using defaults
+[0.091s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) check parameters
+[0.091s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) discover
+[0.091s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 5 installed packages in /home/deathstroke/workspace/catkin_ws_ov/install[0m
+[0.092s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 3 installed packages in /home/deathstroke/realsense-ros/install[0m
+[0.092s] [34mcolcon.colcon_installed_package_information.package_discovery[0m [1;30mDEBUG[0m [32mFound 390 installed packages in /opt/ros/humble[0m
+[0.093s] [34mcolcon.colcon_core.package_discovery[0m [1;30mLevel 1[0m discover_packages(prefix_path) using defaults
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cargo_args' from command line to 'None'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'clean_build' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_args' from command line to 'None'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_target' from command line to 'None'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_clean_cache' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_clean_first' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'cmake_force_configure' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'lookup_in_workspace' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'ament_cmake_args' from command line to 'None'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'catkin_cmake_args' from command line to 'None'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mLevel 5[0m set package 'vins_mono' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.112s] [34mcolcon.colcon_core.verb[0m [1;30mDEBUG[0m [32mBuilding package 'vins_mono' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/deathstroke/openvins-ros/build/vins_mono', 'cargo_args': None, 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'clean_build': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/deathstroke/openvins-ros/install/vins_mono', 'lookup_in_workspace': False, 'merge_install': False, 'path': '/home/deathstroke/openvins-ros', 'symlink_install': False, 'test_result_base': None}[0m
+[0.112s] [34mcolcon.colcon_core.executor[0m [1;30mINFO[0m Executing jobs using 'parallel' executor
+[0.113s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete[0m
+[0.113s] [34mcolcon.colcon_ros.task.ament_cmake.build[0m [1;30mINFO[0m Building ROS package in '/home/deathstroke/openvins-ros' with build type 'ament_cmake'
+[0.113s] [34mcolcon.colcon_cmake.task.cmake.build[0m [1;30mINFO[0m Building CMake package in '/home/deathstroke/openvins-ros'
+[0.114s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.114s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.114s] [34mcolcon.colcon_core.shell[0m [1;30mDEBUG[0m [32mSkip shell extension 'dsv' for command environment[0m
+[0.122s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoking command in '/home/deathstroke/openvins-ros/build/vins_mono': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deathstroke/openvins-ros -DCMAKE_INSTALL_PREFIX=/home/deathstroke/openvins-ros/install/vins_mono[0m
+[0.345s] [34mcolcon.colcon_core.event_handler.log_command[0m [1;30mDEBUG[0m [32mInvoked command in '/home/deathstroke/openvins-ros/build/vins_mono' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/deathstroke/openvins-ros -DCMAKE_INSTALL_PREFIX=/home/deathstroke/openvins-ros/install/vins_mono[0m
+[0.354s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_environment_scripts_only(vins_mono)
+[0.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono' for CMake module files
+[0.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono' for CMake config files
+[0.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono/bin'
+[0.356s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono/lib/pkgconfig/vins_mono.pc'
+[0.357s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono/lib/python3.10/site-packages'
+[0.357s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m checking '/home/deathstroke/openvins-ros/install/vins_mono/bin'
+[0.357s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.ps1'
+[0.357s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package descriptor '/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.dsv'
+[0.358s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.sh'
+[0.358s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.bash'
+[0.359s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating package script '/home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.zsh'
+[0.359s] [34mcolcon.colcon_core.environment[0m [1;30mLevel 1[0m create_file_with_runtime_dependencies(/home/deathstroke/openvins-ros/install/vins_mono/share/colcon-core/packages/vins_mono)
+[0.369s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mclosing loop[0m
+[0.370s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mloop closed[0m
+[0.370s] [34mcolcon.colcon_parallel_executor.executor.parallel[0m [1;30mDEBUG[0m [32mrun_until_complete finished with '1'[0m
+[0.370s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoining thread[0m
+[0.372s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.372s] [34mcolcon.colcon_core.plugin_system[0m [1;30mINFO[0m Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.372s] [34mcolcon.colcon_notification.desktop_notification[0m [1;30mINFO[0m Sending desktop notification using 'notify2'
+[0.381s] [34mcolcon.colcon_core.event_reactor[0m [1;30mDEBUG[0m [32mjoined thread[0m
+[0.381s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/deathstroke/openvins-ros/install/local_setup.ps1'
+[0.382s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/deathstroke/openvins-ros/install/_local_setup_util_ps1.py'
+[0.383s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/deathstroke/openvins-ros/install/setup.ps1'
+[0.384s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/deathstroke/openvins-ros/install/local_setup.sh'
+[0.384s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix util module '/home/deathstroke/openvins-ros/install/_local_setup_util_sh.py'
+[0.385s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/deathstroke/openvins-ros/install/setup.sh'
+[0.386s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/deathstroke/openvins-ros/install/local_setup.bash'
+[0.386s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/deathstroke/openvins-ros/install/setup.bash'
+[0.387s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix script '/home/deathstroke/openvins-ros/install/local_setup.zsh'
+[0.387s] [34mcolcon.colcon_core.shell[0m [1;30mINFO[0m Creating prefix chain script '/home/deathstroke/openvins-ros/install/setup.zsh'

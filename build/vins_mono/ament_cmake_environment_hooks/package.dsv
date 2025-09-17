@@ -1,0 +1,4 @@
+source;share/vins_mono/local_setup.bash
+source;share/vins_mono/local_setup.dsv
+source;share/vins_mono/local_setup.sh
+source;share/vins_mono/local_setup.zsh

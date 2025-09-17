@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>vins_mono</name>
+  <version>0.0.1</version>
+  <description>ROS 2 node for SLAM-based localization with MAVLink communication</description>
+
+  <maintainer email="rishipatil7007@gmail.com">Rishi</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+
+  <!-- For ROS 2 launch files, if you plan to use them -->
+  <exec_depend>ros2launch</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

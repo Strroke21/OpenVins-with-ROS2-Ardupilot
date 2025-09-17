@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target vins_mono_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vins_mono_node.dir/src/ov_ros_main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable vins_mono_node[0m
+[100%] Built target vins_mono_node
+-- Install configuration: ""
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/lib/vins_mono/vins_mono_node
+-- Set runtime path of "/home/deathstroke/openvins-ros/install/vins_mono/lib/vins_mono/vins_mono_node" to ""
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/package_run_dependencies/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/parent_prefix_path/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/ament_prefix_path.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/environment/path.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.bash
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.sh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.zsh
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/local_setup.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.dsv
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/ament_index/resource_index/packages/vins_mono
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig.cmake
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/cmake/vins_monoConfig-version.cmake
+-- Installing: /home/deathstroke/openvins-ros/install/vins_mono/share/vins_mono/package.xml

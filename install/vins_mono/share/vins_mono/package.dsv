@@ -1,0 +1,8 @@
+source;share/vins_mono/hook/cmake_prefix_path.ps1
+source;share/vins_mono/hook/cmake_prefix_path.dsv
+source;share/vins_mono/hook/cmake_prefix_path.sh
+source;share/vins_mono/local_setup.bash
+source;share/vins_mono/local_setup.dsv
+source;share/vins_mono/local_setup.ps1
+source;share/vins_mono/local_setup.sh
+source;share/vins_mono/local_setup.zsh

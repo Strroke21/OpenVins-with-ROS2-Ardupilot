@@ -14,10 +14,10 @@ jump_threshold = 0.1 # in meters, from trials and errors
 jump_speed_threshold = 20 # in m/s
 start_time = time.time()
 rng_alt = 0
-initial_roll = -1.75
+initial_roll = -1.6
 initial_pitch = 1.58
 initial_yaw = 1.68
-cam_orient = 0 # 1=downward, 0=forward
+cam_orient = 1 # 1=downward, 0=forward
 
 def normalize_roll(current_roll, initial_roll):
     # Make yaw positive for clockwise rotation (left-to-right)
@@ -209,6 +209,7 @@ class SlamLocalization(Node):
         linear_vel = msg.twist.twist.linear
         position = msg.pose.pose.position
         orientation = msg.pose.pose.orientation
+
         if cam_orient == 0:
             q = [orientation.x, orientation.y, orientation.z, orientation.w]
             attitude = euler_from_quaternion(q)
@@ -220,11 +221,11 @@ class SlamLocalization(Node):
             self.get_logger().info(f'[Orientation]: roll: {cam_roll}, pitch: {cam_pitch}, yaw: {cam_yaw}')
             self.get_logger().info(f'[SLAM]: X: {cam_x}, Y: {cam_y}, Z: {cam_z}')  
             self.get_logger().info(f'[Linear Velocity]: x: {cam_vx}, y: {cam_vy}, z: {cam_vz}')
-            self.counter += 1
             current_time = time.time()
+            self.counter += 1
             data_hz_per_second = self.counter / (current_time - start_time)
             self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
-
+            
         elif cam_orient == 1:
 
             q = [orientation.x, orientation.y, orientation.z, orientation.w]
@@ -238,8 +239,11 @@ class SlamLocalization(Node):
             self.get_logger().info(f'[Orientation]: roll: {cam_roll}, pitch: {cam_pitch}, yaw: {cam_yaw}')
             self.get_logger().info(f'[SLAM]: X: {cam_x}, Y: {cam_y}, Z: {cam_z}')  
             self.get_logger().info(f'[Linear Velocity]: x: {cam_vx}, y: {cam_vy}, z: {cam_vz}')
-
-
+            self.counter += 1
+            current_time = time.time()
+            data_hz_per_second = self.counter / (current_time - start_time)
+            self.get_logger().info(f'Sending to FCU {data_hz_per_second:.2f} Hz')
+            # time.sleep(1)
 
 def main(args=None):
     rclpy.init(args=args)
