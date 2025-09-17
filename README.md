@@ -64,7 +64,7 @@ ros2 launch realsense2_camera rs_launch.py   enable_depth:=true   enable_color:=
 
 #openvins
 
-ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstroke/workspace/catkin_ws_ov/src/open_vins/config/rs_d455/estimator_config.yaml -p verbosity:=DEBUG  -p try_zupt:=true
+ros2 run ov_msckf run_subscribe_msckf --ros-args -p config_path:=/home/deathstroke/workspace/catkin_ws_ov/src/open_vins/config/rs_d455/estimator_config.yaml -p verbosity:=DEBUG  -p try_zupt:=true -p init_dyn_use:=true
 
 #replace config_path with your path 
 
