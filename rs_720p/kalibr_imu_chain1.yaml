@@ -1,0 +1,40 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  # Noise params (keep your measured values)
+  accelerometer_noise_density: 1.8e-3
+  accelerometer_random_walk:   4.3e-4
+  gyroscope_noise_density:     1.9e-4
+  gyroscope_random_walk:       2.7e-5
+  rostopic: /imu0
+  time_offset: -0.02155
+  update_rate: 100
+
+  model: "kalibr"
+  # Intrinsic stubs required by OpenVINS parser (identities/zeros)
+  Tw:
+    - [1, 0, 0]
+    - [0, 1, 0]
+    - [0, 0, 1]
+  R_IMUtoGYRO:
+    - [1, 0, 0]
+    - [0, 1, 0]
+    - [0, 0, 1]
+
+  Ta:
+    - [1, 0, 0]
+    - [0, 1, 0]
+    - [0, 0, 1]
+  R_IMUtoACC:
+    - [1, 0, 0]
+    - [0, 1, 0]
+    - [0, 0, 1]
+  Tg:
+    - [0, 0, 0]
+    - [0, 0, 0]
+    - [0, 0, 0]
