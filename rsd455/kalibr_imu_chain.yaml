@@ -1,0 +1,44 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+
+  # from Kalibr papers / Intel datasets
+  accelerometer_noise_density: 0.1212306 
+  accelerometer_random_walk: 0.289587  
+  gyroscope_noise_density: 0.01219413   
+  gyroscope_random_walk: 0.11307 
+
+  rostopic: /camera/camera/imu
+  time_offset: 0.0
+  update_rate: 200
+  model: "kalibr"
+
+  Tw:
+    - [1.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0]
+    - [0.0, 0.0, 1.0]
+
+  R_IMUtoGYRO:
+    - [1.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0]
+    - [0.0, 0.0, 1.0]
+
+  Ta:
+    - [1.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0]
+    - [0.0, 0.0, 1.0]
+
+  R_IMUtoACC:
+    - [1.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0]
+    - [0.0, 0.0, 1.0]
+
+  Tg:
+    - [0.0, 0.0, 0.0]
+    - [0.0, 0.0, 0.0]
+    - [0.0, 0.0, 0.0]
